@@ -1,0 +1,129 @@
+@font-face{
+  font-family: Fmessage;
+  src: url(Parisienne-Regular.ttf);
+}
+@font-face{ 
+  font-family: Gmessage; 
+  src: url(GreatVibes-Regular.ttf); 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background: #ffe6f0; 
+    color: #4a4a4a; 
+}
+
+.card {
+  background-color: white;
+  max-width: 400px;
+  padding: 40px;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  box-shadow: 10px 2px 22px gray;
+  transition: transform 0.3s, background-color 0.5s ease-out;
+}
+
+
+h1::before{
+  content: " 🥳";
+}
+
+h1::after{
+  content: "🥳 ";
+}
+.message{
+  font-size: 1rem;
+}
+
+.card:hover{
+  background-color:#ff99bb;
+  transform: scale(1.1);
+}
+
+.card-links{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-links a{
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 30px;
+  background-color: #ff6fae;
+  color: white;
+}
+
+.card-links a:hover{
+  background-color: #ff5c8a;
+}
+
+.play-bday::after{
+  content: "🎂";
+}
+
+p{
+  color: #4a4a4a;
+}
+
+#gif img{
+  display: block;
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  max-height: 265px;
+  margin: 0px auto;
+  padding: 10px;
+  justify-content: center;
+}
+
+#gif:hover{
+  transform: scale(1.1);
+}
+
+#play-bday{
+  display: none;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 20px 25px;
+}
+
+#play-bday:target{
+  display: block;
+}
+
+#for-u{
+  margin: 20px auto;
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 10px;
+  box-shadow: 10px 20px 25px;
+  display: none;
+}
+
+#for-u p{
+  padding: 1px 30px;
+  margin: 20px 10px;
+  font-family: Fmessage;
+  font-size: 1rem;
+}
+
+#for-u:first-of-type{
+  padding-top: 20px;
+}
+
+#for-u:target{
+  display: block;
+}
+
+#for-u::selection{
+  background-color:  #ff6fae;
+  color: white;
+}
