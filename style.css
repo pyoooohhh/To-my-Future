@@ -120,7 +120,7 @@ p{
   padding: 5px 10px;
   margin: 5px 10px;
   font-family: Fmessage;
-  font-size: 1.1vw;
+  font-size: clamp(1.1rem,4w,30px);
 }
 
 #for-u:first-of-type{
